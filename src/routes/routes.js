@@ -17,8 +17,6 @@ router.post('/delete-av/:id', manageController.deleteData)
 
 router.post('/sigin', UserController.login);
 
-
-
 router.post('/create-task',  (req, res) => {
    
     const { title, description } = req.body;
