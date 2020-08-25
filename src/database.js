@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const urlDev = 'mongodb://localhost/calculator';
 const mongoDB = 'mongodb+srv://francisco-savanapoint:Luisa@jaime1996@cluster0-jao6i.mongodb.net/savanapoint?retryWrites=true&w=majority';
 
-mongoose.connect( urlDev, { 
+mongoose.connect( mongoDB, { 
     useNewUrlParser: true,
     useUnifiedTopology: true
     }).then(() => {
