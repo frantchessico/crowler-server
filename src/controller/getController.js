@@ -1,4 +1,4 @@
-const DatasDetails = require('../models/Datas');
+const DatasDetails = require('../models/Test');
 
 module.exports = {
     async getDataDetails(req, res) {

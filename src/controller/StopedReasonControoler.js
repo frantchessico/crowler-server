@@ -6,7 +6,13 @@ const CONSTANTS = require('../constants/constOleo');
 
 module.exports = {
     async store(req, res) {
-       const { c2h2, c2h4, ch4, c2h6, h2} = req.body;
+       const { 
+          c2h2, 
+          c2h4, 
+          ch4, 
+          c2h6,
+           h2
+      } = req.body;
            if(!c2h2 || !c2h4 || !ch4 || !h2 ) {
             return res.json({error: 'please enter valid value'}); 
            }  
