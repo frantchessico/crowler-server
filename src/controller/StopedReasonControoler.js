@@ -35,6 +35,7 @@ module.exports = {
                         c2h2Byc2h4: c2h2/c2h4,
                         ch4Byh2: ch4 / h2,
                         c2h4Byc2h6: c2h4/ c2h6,
+                        createdAt: Date.now(),
                         resulOfTest: 'normalState'
                      });
                     const testReuslt = await test.save();
@@ -45,6 +46,7 @@ module.exports = {
                         c2h2Byc2h4: c2h2/c2h4,
                         ch4Byh2: ch4 / h2,
                         c2h4Byc2h6: c2h4/ c2h6,
+                        createdAt: Date.now(),
                         resulOfTest: 'Sobreaquecimento, a temperatura está acima de 700C'
                      });
                     const testReuslt = await test.save();
@@ -62,6 +64,7 @@ module.exports = {
                            c2h2Byc2h4: c2h2/c2h4,
                            ch4Byh2: ch4 / h2,
                            c2h4Byc2h6: c2h4/ c2h6,
+                           createdAt: Date.now(),
                            resulOfTest: 'Descargas parciais'
                         });
                        const testReuslt = await test.save();
@@ -92,6 +95,7 @@ module.exports = {
                         c2h2Byc2h4: c2h2/c2h4,
                         ch4Byh2: ch4 / h2,
                         c2h4Byc2h6: c2h4/ c2h6,
+                        createdAt: Date.now(),
                         resulOfTest: 'Grande Descarga De Energia'
                      });
                     const testReuslt = await test.save();
@@ -102,6 +106,7 @@ module.exports = {
                         c2h2Byc2h4: c2h2/c2h4,
                         ch4Byh2: ch4 / h2,
                         c2h4Byc2h6: c2h4/ c2h6,
+                        createdAt: Date.now(),
                         resulOfTest: 'Sem falha, continue verificando'
                      }); 
 
@@ -111,6 +116,7 @@ module.exports = {
                      c2h2Byc2h4: c2h2/c2h4,
                      ch4Byh2: ch4 / h2,
                      c2h4Byc2h6: c2h4/ c2h6,
+                     createdAt: Date.now(),
                      resulOfTest: 'Sem falha, continue verificando'
                    })
                     return res.json(testReuslt)
