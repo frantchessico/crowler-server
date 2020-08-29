@@ -32,6 +32,7 @@ module.exports = {
                    
                      const test =  new Test({
                         idOfDataForTest: data.id,
+                        typeOftest: 'oil-test',
                         c2h2Byc2h4: c2h2/c2h4,
                         ch4Byh2: ch4 / h2,
                         c2h4Byc2h6: c2h4/ c2h6,
@@ -43,6 +44,7 @@ module.exports = {
                  } else if( (c2h4/c2h6) > 3.5) {
                     const test =  new Test({
                         idOfDataForTest: data.id,
+                        typeOftest: 'oil-test',
                         c2h2Byc2h4: c2h2/c2h4,
                         ch4Byh2: ch4 / h2,
                         c2h4Byc2h6: c2h4/ c2h6,
@@ -61,6 +63,7 @@ module.exports = {
                        if((c2h4/c2h6) <= 0.1) {
                         const test =  new Test({
                            idOfDataForTest: data.id,
+                           typeOftest: 'oil-test',
                            c2h2Byc2h4: c2h2/c2h4,
                            ch4Byh2: ch4 / h2,
                            c2h4Byc2h6: c2h4/ c2h6,
@@ -92,6 +95,7 @@ module.exports = {
                   if(value >= CONSTANTS.valueFixFour) {
                      const test =  new Test({
                         idOfDataForTest: data.id,
+                        typeOftest: 'oil-test',
                         c2h2Byc2h4: c2h2/c2h4,
                         ch4Byh2: ch4 / h2,
                         c2h4Byc2h6: c2h4/ c2h6,
@@ -103,6 +107,7 @@ module.exports = {
                   } else {
                      const test =  new Test({
                         idOfDataForTest: data.id,
+                        typeOftest: 'oil-test',
                         c2h2Byc2h4: c2h2/c2h4,
                         ch4Byh2: ch4 / h2,
                         c2h4Byc2h6: c2h4/ c2h6,
@@ -113,6 +118,7 @@ module.exports = {
                     const testReuslt = await test.save();
                    await firebase.FIRESTORE.collection('results').add({
                      idOfDataForTest: data.id,
+                     typeOftest: 'oil-test',
                      c2h2Byc2h4: c2h2/c2h4,
                      ch4Byh2: ch4 / h2,
                      c2h4Byc2h6: c2h4/ c2h6,

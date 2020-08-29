@@ -10,7 +10,7 @@ module.exports = {
              let avas = [];
              data.forEach(doc => {
                  avas.push(doc.data())
-             })
+             }) 	
              return res.json(avas)
          }).catch(err => {
              return res.json(err)
