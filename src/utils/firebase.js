@@ -15,5 +15,7 @@ const firebaseConfig = {
 
   module.exports = {
     AUTH: firebase.auth(),
-    FIRESTORE: firebase.firestore()
+    FIRESTORE: firebase.firestore(),
+    DATABASE: firebase.database(),
+    ADMIN: firebase.database()
   }

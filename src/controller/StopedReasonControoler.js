@@ -107,18 +107,37 @@ module.exports = {
                         ch4Byh2: ch4 / h2,
                         c2h4Byc2h6: c2h4/ c2h6,
                         createdAt: Date.now(),
-                        resulOfTest: 'Sem falha, continue verificando'
+                        resulOfTest: 'Without failure, keep checking'
                      }); 
 
                     const testReuslt = await test.save();
-                   await firebase.FIRESTORE.collection('results').add({
+                  //  await firebase.FIRESTORE.collection('results').add({
+                  //    idOfDataForTest: data.id,
+                  //    c2h2Byc2h4: c2h2/c2h4,
+                  //    ch4Byh2: ch4 / h2,
+                  //    c2h4Byc2h6: c2h4/ c2h6,
+                  //    createdAt: Date.now(),
+                  //    resulOfTest: 'Without failure, keep checking'
+                  //  })
+                    
+                  // await firebase.DATABASE.ref('result'+ data.id).set({
+                  //    idOfDataForTest: data.id,
+                  //    c2h2Byc2h4: c2h2/c2h4,
+                  //    ch4Byh2: ch4 / h2,
+                  //    c2h4Byc2h6: c2h4/ c2h6,
+                  //    createdAt: Date.now(),
+                  //    resulOfTest: 'Without failure, keep checking'
+                  // })
+
+                  const ref = firebase.ADMIN.ref('result');
+                  const resultRef = ref.push({
                      idOfDataForTest: data.id,
                      c2h2Byc2h4: c2h2/c2h4,
                      ch4Byh2: ch4 / h2,
                      c2h4Byc2h6: c2h4/ c2h6,
                      createdAt: Date.now(),
-                     resulOfTest: 'Sem falha, continue verificando'
-                   })
+                     resulOfTest: 'Without failure, keep checking'
+                  })
                     return res.json(testReuslt)
                   }
                   
