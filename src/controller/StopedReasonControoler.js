@@ -131,7 +131,7 @@ module.exports = {
                  
                }
             } else {
-               return res.json({ok: false})
+               return res.json({error: 'Please enter valid value'})
             }
             
          }
