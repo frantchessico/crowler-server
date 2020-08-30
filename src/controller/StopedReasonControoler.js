@@ -37,7 +37,7 @@ module.exports = {
                         ch4Byh2: ch4 / h2,
                         c2h4Byc2h6: c2h4/ c2h6,
                         createdAt: Date.now(),
-                        resulOfTest: 'normalState'
+                        resultOfTest: 'normalState'
                      });
                     const testReuslt = await test.save();
                     return res.json(testReuslt)
@@ -49,7 +49,7 @@ module.exports = {
                         ch4Byh2: ch4 / h2,
                         c2h4Byc2h6: c2h4/ c2h6,
                         createdAt: Date.now(),
-                        resulOfTest: 'Sobreaquecimento, a temperatura está acima de 700C'
+                        resultOfTest: 'Sobreaquecimento, a temperatura está acima de 700C'
                      });
                     const testReuslt = await test.save();
                     return res.json(testReuslt)
@@ -68,7 +68,7 @@ module.exports = {
                            ch4Byh2: ch4 / h2,
                            c2h4Byc2h6: c2h4/ c2h6,
                            createdAt: Date.now(),
-                           resulOfTest: 'Descargas parciais'
+                           resultOfTest: 'Descargas parciais'
                         });
                        const testReuslt = await test.save();
                        firebase.FIRESTORE.collection('results').add({
@@ -100,7 +100,7 @@ module.exports = {
                         ch4Byh2: ch4 / h2,
                         c2h4Byc2h6: c2h4/ c2h6,
                         createdAt: Date.now(),
-                        resulOfTest: 'Grande Descarga De Energia'
+                        resultOfTest: 'Grande Descarga De Energia'
                      });
                     const testReuslt = await test.save();
                     return res.json(testReuslt)
@@ -112,7 +112,7 @@ module.exports = {
                         ch4Byh2: ch4 / h2,
                         c2h4Byc2h6: c2h4/ c2h6,
                         createdAt: Date.now(),
-                        resulOfTest: 'Sem falha, continue verificando'
+                        resultOfTest: 'Sem falha, continue verificando'
                      }); 
 
                     const testReuslt = await test.save();
