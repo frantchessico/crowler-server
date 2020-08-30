@@ -19,7 +19,7 @@ const Test = new Schema({
         type: String,
         required: true
     },
-    resulOfTest: {
+    resultOfTest: {
         type: String,
         required: true
     }
